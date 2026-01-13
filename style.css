@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+/* Navbar on scroll */
+nav.scrolled {
+    background-color: #111;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* Button spacing */
+.nav-links li {
+    margin-left: 15px;
+}
+
+/* BUTTON STYLE */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER EFFECT */
+.nav-links a:hover {
+    background-color: #00e5ff;
+    color: black;
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+    background: linear-gradient(#1f1f2e, #111);
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
