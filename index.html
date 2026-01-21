@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Responsive Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyInternship Landing Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav id="navbar">
-        <div class="logo">MyInternship</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="logo">
+      MyInternship
+      <span class="tagline">#SkillCraft</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Sections -->
-    <section id="home" class="section">
-        <h1>Welcome to My Landing Page</h1>
-        <p>Scroll down to see navbar change</p>
-    </section>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Welcome to My Landing Page</h1>
+    <p>Scroll down to see the interactive navigation bar</p>
+    <button class="cta-btn">Get Started</button>
+  </section>
 
-    <section id="about" class="section">
-        <h1>About Us</h1>
-        <p>This is an internship task project</p>
-    </section>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <h2>About Us</h2>
+    <p>
+      This project demonstrates a responsive landing page with a fixed
+      navigation bar that changes style on scroll.
+    </p>
+  </section>
 
-    <section id="services" class="section">
-        <h1>Services</h1>
-        <p>Web Design | Web Development | Learning</p>
-    </section>
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <h2>Our Services</h2>
+    <p>
+      We provide web development internships, beginner-friendly projects,
+      and hands-on learning experience.
+    </p>
+  </section>
 
-    <section id="contact" class="section">
-        <h1>Contact</h1>
-        <p>Email: example@gmail.com</p>
-    </section>
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: internship@example.com<br>
+      Phone: +91 XXXXX XXXXX
+    </p>
+  </section>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
