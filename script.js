@@ -1,9 +1,9 @@
-window.addEventListener("scroll", function () {
-    const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
 
-    if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });
